@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img src="Screenshot 2026-09-22 180536.png" alt="image of logo" />
+        <a class="navbar-brand" href="#"
+          >What's For Dinner<br /><span style="font-size: 12px"
+            >Your daily meal inspiration</span
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end gap-2"
+          id="navbarSupportedContent"
+        >
+          <button class="btn btn-outline-success" type="submit">
+            <img
+              src="Screenshot 2026-09-22 182627.png"
+              class="imageofbutton"
+              alt="image of button"
+            />
+          </button>
+          <button class="btn btn-outline-success" type="submit">
+            <img
+              src="Screenshot 2026-09-22 184531.png"
+              class="imageofbutton"
+              alt="image of button"
+            />
+          </button>
+          <button class="btn btn-outline-success" type="submit">
+            <img
+              src="Screenshot 2026-09-22 184621.png"
+              class="imageofbutton"
+              alt="image of button"
+            />
+          </button>
+          <img src="avatar-4.jpg" class="imgofavatar" alt="image of avatar" />
+        </div>
+      </div>
+    </nav>
+
+    <div class="dishpane d-flex justify-content-center">
+      <div class="d-flex justify-content-end">
+        <div id="heroImage" class="imgsection d-flex flex-column">
+          <div class="rating">
+            <img
+              src="Screenshot 2026-09-22 192329.png"
+              class="imageofbutton"
+              alt="image of star"
+            />
+            <span id="ratingText">4.7 (312 reviews)</span>
+          </div>
+          <div class="prep d-flex justify-content-center gap-4 mt-auto">
+            <div class="d-flex flex-column align-items-center text-center">
+              <img
+                src="Screenshot 2026-09-22 193034.png"
+                class="imageofbutton"
+                alt="image of clock"
+              />
+              <p>
+                <span style="color: #868b97">Prep Time</span><br /><span
+                  id="prepTime"
+                  style="font-weight: bold"
+                  >15 min</span
+                >
+              </p>
+            </div>
+
+            <div class="d-flex flex-column align-items-center text-center">
+              <img
+                src="Screenshot 2026-09-22 194407.png"
+                class="imageofbutton"
+                alt="image of clock"
+              />
+              <p>
+                <span style="color: #868b97">Cook Time</span><br /><span
+                  id="cookTime"
+                  style="font-weight: bold"
+                  >25 min</span
+                >
+              </p>
+            </div>
+
+            <div class="d-flex flex-column align-items-center text-center">
+              <img
+                src="Screenshot 2026-09-22 194503.png"
+                class="imageofbutton"
+                alt="image of clock"
+              />
+              <p>
+                <span style="color: #868b97">Servings</span><br /><span
+                  id="servings"
+                  style="font-weight: bold"
+                  >4 people</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipesection d-flex flex-column p-4">
+          <div class="row">
+            <div id="badgeDifficulty" class="e">Easy</div>
+            <div id="badgeCuisine" class="a">Asian</div>
+          </div>
+
+          <div class="tiitlerow d-flex justify-content-around">
+            <div class="d-flex flex-column">
+              <h1 id="recipeTitle">Teriyaki Chicken Bowl</h1>
+              <p id="recipeDesc" style="color: #868b97">
+                Sweet and savory chicken over rice with vegetables
+              </p>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <button class="btn btn-outline-success" type="button">
+                <img
+                  src="Screenshot 2026-09-24 102827.png"
+                  class="imageofbutton"
+                  alt="image of button"
+                />
+              </button>
+
+              <button class="btn btn-outline-success" type="button">
+                <img
+                  src="Screenshot 2026-09-24 102902.png"
+                  class="imageofbutton"
+                  alt="image of button"
+                />
+              </button>
+            </div>
+          </div>
+
+          <ul class="nav nav-tabs" id="recipeTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="ingredients-tab"
+                data-bs-toggle="tab"
+                href="#ingredients"
+                role="tab"
+                aria-controls="ingredients"
+                aria-selected="true"
+                style="color: #868b97"
+              >
+                Ingredients
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="instructions-tab"
+                data-bs-toggle="tab"
+                href="#instructions"
+                role="tab"
+                aria-controls="instructions"
+                aria-selected="false"
+                style="color: #868b97"
+              >
+                Instructions
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="nutrition-tab"
+                data-bs-toggle="tab"
+                href="#nutrition"
+                role="tab"
+                aria-controls="nutrition"
+                aria-selected="false"
+                style="color: #868b97"
+              >
+                Nutrition
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="tips-tab"
+                data-bs-toggle="tab"
+                href="#tips"
+                role="tab"
+                aria-controls="tips"
+                aria-selected="false"
+                style="color: #868b97"
+              >
+                Chef's Tips
+              </a>
+            </li>
+          </ul>
+
+          <div class="tab-content pt-3" id="recipeTabContent">
+            <div
+              class="ing tab-pane fade show active"
+              id="ingredients"
+              role="tabpanel"
+              aria-labelledby="ingredients-tab"
+            >
+              <ul id="ingredientsList"></ul>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="instructions"
+              role="tabpanel"
+              aria-labelledby="instructions-tab"
+            >
+              <ol id="instructionsList"></ol>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="nutrition"
+              role="tabpanel"
+              aria-labelledby="nutrition-tab"
+            >
+              <div id="nutritionGrid" class="row g-3"></div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="tips"
+              role="tabpanel"
+              aria-labelledby="tips-tab"
+            >
+              <div id="tipsList" class="d-flex flex-column gap-3"></div>
+            </div>
+
+            <button id="nextRecipeBtn" class="rec" type="button">
+              Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
